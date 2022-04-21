@@ -1,3 +1,4 @@
+
 // contact list, don't change this.
 const contactsList = [
   {
@@ -52,3 +53,15 @@ const contactsList = [
 ]
 
 // Your code goes here
+const place = document.querySelector("#display_all_contacts")
+for (var x = 0; x < contactsList.length; x++){
+  const newContact = document.createElement('div')
+  newContact.setAttribute('id', 'individual_contact')
+  place.append(newContact)
+  const picture = document.createElement('img')
+  const p = document.createElement('p')
+  p.innerHTML = contactsList[x].name
+  picture.setAttribute('src', 'img/' + contactsList[x].image) 
+  newContact.append(p)
+  newContact.append(picture)
+  }
