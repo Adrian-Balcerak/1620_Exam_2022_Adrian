@@ -65,3 +65,10 @@ for (var x = 0; x < contactsList.length; x++){
   newContact.append(p)
   newContact.append(picture)
   }
+
+  function displaySingleContact(){
+    
+  }
+
+  const cont = document.querySelector('#individual_contact')
+  cont.addEventListener('click', displaySingleContact())
